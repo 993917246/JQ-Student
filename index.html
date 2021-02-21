@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学生管理系统</title>
+  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="stylesheet" href="./fanye/fanye.css">
+</head>
+<body>
+  <div id="top">
+    <img src="./IMG/logo.png" alt="">
+    <span>渡一教育</span>
+  </div>
+  <div id="left">
+    <dl>
+      <dt class="list">学生管理</dt>
+      <dd class="list active" data-id="student-list">学生列表</dd>
+      <dd class="list" data-id="student-add">新增学生</dd>
+    </dl>
+  </div>
+  <div id="right">
+    <div class="student-list right active" >
+      <table>
+        <thead>
+          <tr class="head">
+            <th>学号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>邮箱</th>
+            <th>年龄</th>
+            <th>手机号</th>
+            <th>住址</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr class="body">
+            <th>0001</th>
+            <th>张三</th>
+            <th>男</th>
+            <th>1111@qq.com</th>
+            <th>18</th>
+            <th>17681880213</th>
+            <th>地球</th>
+            <th>
+              <button class="btn change">编辑</button>
+              <button class="btn del">删除</button>
+            </th>
+          </tr> -->
+        </tbody>
+      </table>
+      <div class="page"></div>
+      <div class="modal ">
+        <div class="modal-form">
+          <span>编辑信息</span>
+          <form class="form">
+            <div>
+              <label for="name">姓名</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div>
+              <label for="" >性别</label>
+              <input type="radio" name="sex" id="male" value="0"  checked><label for="male" class="sex">男</label> 
+              <input type="radio" name="sex" id="female" value="1" ><label for="female" class="sex">女</label> 
+            </div>
+            <div>
+              <label for="email">邮箱</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div>
+              <label for="user-id">学号</label>
+              <input type="text" id="user-id" name="sNo" readonly>
+            </div>
+            <div>
+              <label for="birth">出生年</label>
+              <input type="text" id="birth" name="birth">
+            </div>
+            <div>
+              <label for="iphone">手机号</label>
+              <input type="text" id="iphone" name="phone">
+            </div>
+            <div>
+              <label for="address">住址</label>
+              <input type="text" id="address" name="address">
+            </div>
+            <div class="btnDiv">
+              <button class="btn submit" type="submit" value="提交">提交</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="student-add right">
+      <form class="form">
+          <div>
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div>
+            <label for="" >性别</label>
+            <input type="radio" name="sex" id="male" value="0"  checked><label for="male" class="sex">男</label> 
+            <input type="radio" name="sex" id="female" value="1" ><label for="female" class="sex">女</label> 
+          </div>
+          <div>
+            <label for="email">邮箱</label>
+            <input type="text" id="email" name="email">
+          </div>
+          <div>
+            <label for="user-id">学号</label>
+            <input type="text" id="user-id" name="sNo">
+          </div>
+          <div>
+            <label for="birth">出生年</label>
+            <input type="text" id="birth" name="birth">
+          </div>
+          <div>
+            <label for="iphone">手机号</label>
+            <input type="text" id="iphone" name="phone">
+          </div>
+          <div>
+            <label for="address">住址</label>
+            <input type="text" id="address" name="address">
+          </div>
+          <div class="btnDiv">
+            <button class="btn submit" type="submit" value="提交">提交</button>
+            <button class="btn" type="reset" value="重置">重置</button>
+          </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./fanye/fanye.js"></script>
+  <script src="./js/mock.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
